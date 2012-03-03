@@ -1,0 +1,370 @@
+$white: #fefefe
+$red: #942c2c
+$green: #00ee00
+$orange: #eddd76
+$margin: 8px
+$ffamily: 'Helvetica Neue', Georgia, sans-serif
+$coolBlue: #3A8BE6
+
+body, p, ul, li, ol
+  margin: 0
+  outline: 0
+  padding: 0
+
+body
+  color: #666666
+  background-color: #EEEEEE
+  font:
+    family: $ffamily
+    size: 100%
+    weight: 300
+
+a
+  color: $coolBlue
+  text-decoration: none
+
+a:hover, a:focus
+  text-decoration: underline
+
+
+p
+  margin: 10px 0
+  line-height: 1.4em
+  text-align: justify
+  
+th
+  text-align: left
+  color: $orange
+  border-bottom: 1px solid #AAA
+  background: #999999
+  background: -moz-linear-gradient(top, #999999 0%, #6F6F6F 100%)
+  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#6F6F6F))
+  
+th a
+  color: $orange
+
+#header_wrap
+  height: 80px
+  padding-left: 50px
+
+#body, #footer
+  margin: 0 auto
+  width: 920px  
+  
+#header
+  position: relative
+  padding: 10px
+  border-bottom: 1px solid #AAA
+  background: #999999
+  background: -moz-linear-gradient(top, #999999 0%, #6F6F6F 100%)
+  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#6F6F6F))
+  
+#footer
+  clear: both
+  padding-top: 5em
+  font-size: .9em
+  font-weight: 300
+
+#footer hr
+  border-wdith: 0
+  border-top: 1px solid #AAAAAA
+  margin: 0 1em
+
+
+#footer p
+  margin: 1em
+  text-align: center
+  color: #666666
+
+#split
+  width: 100%
+  margin: 10px 0
+
+.left
+  float: left
+
+.right
+  float: right
+
+.slide
+  margin: 20px 60px 0 0
+  width: 410px
+
+.slide img,
+.slide iframe,
+.slide object
+  padding: 5px
+  border: 1px solid #ccc
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  -moz-box-shadow: 0 15px 80px rgba(0,0,0,0.48)
+  -webkit-box-shadow: 0 15px 80px rgba(0,0,0,0.48)
+
+.slide img:hover,
+.slide iframe:hover,
+.slide object:hover
+  -moz-transition: .4s all linear
+  -webkit-transition: .4s all linear
+  -moz-box-shadow: 0 15px 80px rgba(0,0,0,0.58)
+  -webkit-box-shadow: 0 15px 80px rgba(0,0,0,0.58)
+
+.slide p
+  text-align: justify
+  padding: 0 2px
+  margin-top: 30px
+
+ul, li
+  list-style: square inside
+
+h2
+  font-size: 2em
+  line-height: 0.5em
+  font-weight: 300
+  letter-spacing: -1px
+  text-shadow: 0px 2px 3px #ccc
+
+li
+  font:
+    family: $ffamily
+  padding: $margin / 2
+  margin: 4px 0 4px 14px
+
+ol li
+  margin: 12px 8px
+  padding: 0
+  list-style-type: upper-hexadecimal
+
+input
+  font:
+    family: $ffamily
+    size: 1.4em
+    weight: 300
+  color: $coolBlue
+  border: 2px solid #ddd
+  padding: 10px
+  border-radius: 6px
+  -moz-border-radius: 6px
+  -webkit-border-radius: 6px
+
+input[type="text"], input[type="password"]
+  height: 1em
+  width: 365px
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="text"]:hover, input[type="password"]:hover
+  outline: none
+  border-color: #aaaaaa
+  box-shadow: 0 0 16px #aaaaaa
+  -webkit-box-shadow: 0 0 8px #aaaaaa 
+  -webkit-transition: all .3s linear
+  -moz-box-shadow: 0 0 8px #aaaaaa 
+  -moz-transition: all .3s linear
+
+input.regular
+  color: #666666
+  font:
+    family: $ffamily
+    size: 100%
+    weight: 300
+  padding: 2px
+
+label
+  cursor: pointer
+
+#form p:first-child
+  border-left: 2px solid white
+  padding: 0 0 0 10px
+  margin: 20px 10px 30px
+
+.sub
+  display: block
+  font-size: .8em
+  font-weight: 300
+  line-height: 1.6em
+
+button
+  font:
+    family: $ffamily
+    size: 2em
+    weight: bold
+  display: inline-block
+  cursor: pointer
+  margin: 28px 0
+  
+label.title
+  margin: $margin * 4 0px 2px 0px
+  padding-left: 0
+  display: block
+  font-weight: 400
+
+label.tight
+  margin: $margin * 2 0px 2px 0px
+  padding-left: 0
+  display: block
+  font-weight: 400
+
+label.title:first-child
+  margin-top: 28px
+
+.clear
+  clear: left
+  
+.below-main
+  clear: both
+  padding-top: 5em
+  font-size: .9em
+
+.error
+  padding: 4px
+  background-color: $red
+  color: $white
+  border-radius: 6px
+
+.error p, .msg a, .msg div
+  margin-left: 18px
+  line-height: 1.4em
+  text-align: justify
+
+.msg
+  color: $coolBlue
+
+.msg_orange
+  padding: 4px
+  background-color: $orange
+  color: $coolBlue
+  border-radius: 6px
+  width: 100%
+
+.msg_orange a
+  text-decoration: underline
+
+.msg_green
+  padding: 4px
+  background-color: $green
+  color: $coolBlue
+  border-radius: 6px
+  width: 100%
+
+.msg_red
+  padding: 4px
+  background-color: $red
+  color: $white
+  border-radius: 6px
+  width: 100%
+
+.awesome
+  background: $coolBlue url(/alert-overlay.png) repeat-x
+  display: inline-block
+  color: #fff
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5)
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5)
+  border-bottom: 1px solid rgba(0,0,0,0.25)
+  position: relative
+  font-weight: bold
+  line-height: 1
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25)
+  font-size: 2em
+  padding: 8px 14px 9px
+
+.awesome:hover, .awesome:focus
+  outline: 0
+  background-color: #111
+  color: #fff
+  -moz-transition: .4s all linear
+  -webkit-transition: .4s all linear
+  
+.logo
+  display: block
+  width: 250px
+  height: 82px
+  background: url('/logo.png') bottom
+  text-indent: -99999px
+  float: left
+	
+.logo:hover
+  background-position: 0 0
+
+.smaller
+  font-size: 1em
+  padding: 6px 10px 7px
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.5)
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.5)
+  margin: 14px 0px
+  
+.center
+  text-align: center
+
+.hoverable:hover
+  background-color: $orange
+  
+#header ul
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#E9E9E9))
+  border: 1px solid #AAA  
+  background-color: #F0F0F0
+  border-radius: 0.5em
+  margin: 2em
+  padding: 2px 0px
+  list-style-image: none
+  list-style-position: outside
+  list-style-type: none      
+  outline: 0
+  font-family: "Helvetica Neue", Verdana, Georgia, sans-serif
+  font-size: 12px
+  font-weight: normal
+  color: #4F565D
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6)
+  float: right  
+  
+#header ul li
+  display: block
+  float: left
+  margin: 0
+  padding: 0
+  border-right: 1px solid #DEDEDE
+  border-left: 1px solid #FEFEFE
+  height: 100%
+  
+#header ul li a
+  display: block
+  padding: 0 0.75em
+  height: 100%
+  line-height: 2em
+  color: #666
+  text-decoration: none
+  outline: 0
+
+.small-text
+  font-size: .9em
+
+.required
+  background-image: url('bullet_red.png')
+  background-repeat: no-repeat
+  background-position: right
+  
+#req_msg
+  background-position: left
+  color: $red
+  padding-left: 15px
+  font-size: .75em
+  margin-top: .75em
+  
+.faq
+  clear: both
+  width: 920px
+  border: 1px solid #DDD
+  margin: 30px 30px 0px 0px
+  padding: 10px
+
+.faq h2
+  font-size: 1.2em  
+
+#bold
+  font-weight: bold
+
+
+.fixed-layout
+  table-layout: fixed
+  
+
